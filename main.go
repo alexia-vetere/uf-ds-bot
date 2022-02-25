@@ -65,7 +65,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	})
 	c.Visit("https://valoruf.cl/")
-	response := ("1 UF =" + allFacts[1] + "CLP")
+	response := ("1 UF = " + allFacts[1] + " CLP")
 
 	if m.Author.ID == s.State.User.ID {
 		return
