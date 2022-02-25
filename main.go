@@ -74,4 +74,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Content == "!UF" {
 		s.ChannelMessageSend(m.ChannelID, response)
 	}
+
+	if m.Content == "!uf" {
+		s.ChannelMessageSend(m.ChannelID, response)
+	}
 }
